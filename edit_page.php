@@ -28,11 +28,16 @@ add_action('content-bottom', 'edit_page', array());
 
 # functions
 function edit_page() {
-  //Get url and slug
-  $url=get_site_url(false);
-  $slug=get_page_slug(false);
-  //Echo the link
-  echo '<a href="'.$url.'admin/edit.php?id='.$slug.'">Edit this page</a>';
+  if (cookie_check()) {
+    //The name of the admin page
+    global $GSADMIN;
+    //Get url and slug
+    $url=get_site_url(false);
+    $slug=get_page_slug(false);
+    
+    //Echo the link
+    echo '<a href="'.$url.$GSADMIN.'/edit.php?id='.$slug.'">Edit this page</a>';
+  }
 }
 
 ?>
