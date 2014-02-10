@@ -14,4 +14,4 @@ Potential Future Development
 ============================
 For hiding the link from non-admin users I basically see two possibilites:
 -  something like GSCOOKIEISSITEWIDE will be available for developers in a future version of GetSimple
--  one could hide it via css or JavaScript, so it is not obviously visible to a user that does not know about its existance (sort of a hack, but would do the trick)
+-  one could hide it via css or JavaScript, so it is not obviously visible to a user that does not know about its existence (sort of a hack, but would do the trick)
