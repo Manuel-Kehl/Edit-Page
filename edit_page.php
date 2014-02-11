@@ -36,8 +36,19 @@ function edit_page() {
     $slug=get_page_slug(false);
     
     //Echo the link
-    echo '<p class="edit-page"><a href="'.$url.$GSADMIN.'/edit.php?id='.$slug.'">Edit this page</a></p>';
+    echo '<p class="edit-page">';
+    echo '<a href="'.$url.$GSADMIN.'/edit.php?id='.$slug.'">Edit this page</a>';
+    echo_separator();
+    echo '<a href="'.$url.$GSADMIN.'/edit.php?special=project">Add Project</a>';
+    echo_separator();
+    echo '<a href="'.$url.$GSADMIN.'/edit.php?special=blogpost">Add Blogpost</a>';
+    echo '</p>';
+    
   }
+}
+
+function echo_separator() {
+  echo " | ";
 }
 
 ?>
