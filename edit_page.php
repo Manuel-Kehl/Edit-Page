@@ -36,7 +36,7 @@ function edit_page() {
     $slug=get_page_slug(false);
     
     //Echo the link
-    echo '<a href="'.$url.$GSADMIN.'/edit.php?id='.$slug.'">Edit this page</a>';
+    echo '<p class="edit-page"><a href="'.$url.$GSADMIN.'/edit.php?id='.$slug.'">Edit this page</a></p>';
   }
 }
 
